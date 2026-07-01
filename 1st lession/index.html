@@ -10,6 +10,18 @@
     ></script>
   </head>
   <body>
-    <div x-data="{count:0}"></div>
+    <div x-data="{count:0}">
+      <p>The value of count is <span x-text="count"></span></p>
+      <button x-on:click="count++">+</button>
+    </div>
+
+    <div x-data="{name:'Mugdha', age:25}">
+      <p>
+        Hello everyone,
+        <br />
+        My name in <span x-text="name"></span>. I am
+        <span x-text="age"></span> years old
+      </p>
+    </div>
   </body>
 </html>
